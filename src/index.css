@@ -1,13 +1,210 @@
-body {
+* {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.no-scroll {
+  overflow: hidden;
 }
+
+.loading {
+  width: 100%;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.header img {
+  height: 10vh;
+  margin: 1vh 0;
+}
+
+.pagination {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5vh;
+  background-color: darkblue;
+}
+
+.page-elements {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid darkblue;
+  padding: .5vh 0;
+}
+
+.page-elements p {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+.page-elements span {
+  font-weight: 700;
+  color: white;
+}
+
+.landing {
+  width: 100%;
+  height: 100%;
+}
+
+.results {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.result {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1vh;
+  border-bottom: 1px solid darkblue;
+}
+
+.image img {
+  max-width: 39vh;
+height: 20vh;
+margin-bottom: 1vh;
+margin-left: 1vh;
+cursor: pointer;
+}
+
+.image {
+  width: 40vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.info {
+  width: calc(100vw - 40vh);
+  word-wrap: break-word;
+}
+
+.info h3 {
+  color: darkblue;
+}
+
+.info h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.info p {
+  word-wrap: break-word;
+  font-weight: 300;
+}
+
+.wanted {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.closeIcon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-weight: 700;
+  color: red;
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.wanted-info {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 25vw;
+}
+
+.single-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1vh;
+}
+
+.single-image span {
+  font-size: .75rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.images img {
+  height: 20vh;
+  margin-left: 1vh;
+}
+
+.wanted-infos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.wanted-flairs {
+  margin: 1vh 0;
+}
+
+.wanted-infos span {
+  color: white;
+  background-color: darkblue;
+  border-radius: 10px;
+  margin-left: .5vh;
+  padding: 0 8px;
+}
+
+
